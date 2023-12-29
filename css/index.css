@@ -1,0 +1,210 @@
+/* lato-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-v24-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/lato-v24-latin-900.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Lato;
+  font-style: normal;
+  color: white;
+}
+
+/*styles for header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+}
+
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  flex-wrap: wrap;
+  padding-top: 56px;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header__item {
+  margin-right: 80px;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+  opacity: 0.7;
+}
+
+/*styles for intro */
+
+.intro{
+  height: 100%;
+  background-image: url(../image/Hero.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro__title {
+  max-width: 620px;
+  padding-top: 263px;
+
+  font-size: 50px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.intro__subtitle {
+  max-width: 546px;
+  padding-top: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.search-form {
+  padding-top: 60px;
+  padding-bottom: 153px;
+}
+/* input{
+  /* border: 0; */
+  /* border-bottom: 3px solid rgba(191, 192, 197, 1);
+  background-color: transparent;
+  margin-right: 50px; */
+
+.search-form__info{
+  display: flex;
+  position: relative;
+}
+.search-form__info::before{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px solid white;
+  position: absolute;
+}
+.search-form__info::after{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px solid white;
+  position: absolute;
+  left: 360px;
+}
+
+.search-form__field{
+  width: 300px;
+  height: 50px;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  border: 0;
+  border-bottom: 2px solid #BFC0C5; 
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px; 
+}
+.search-form__field::placeholder{
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.search-form__submit{
+  width: 170px;
+  height: 58px;
+  border: 0;
+  background-color: #1B7DFF;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+.search-form__submit:hover, .search-form__submit:focus, .search-form__submit:active{
+  background-color: #0a55b7;
+}
+  /* min-height: 50px;
+  width:153px; 
+  position: relative; */
+  /* margin-right: 50px; */
+
+
+/* .intro__form-formfield::before{
+  display: inline-block;
+  content:'';
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  position: absolute;
+  top:0;
+  left:0;
+} */
