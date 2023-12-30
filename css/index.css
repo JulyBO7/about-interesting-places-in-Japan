@@ -46,6 +46,29 @@ body {
   font-style: normal;
   color: white;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* section__title использовать для подобных заголовков */
+.section__title{
+  font-size: 35px;
+  color: #102746;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section__title::after{
+  content: '';
+  display: inline-block;
+  width: 253px;
+  height: 3px;
+  background-color: #006DFE;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 /*styles for header */
 
@@ -96,7 +119,7 @@ body {
   opacity: 0.7;
 }
 
-/*styles for intro */
+/*styles for intro start */
 
 .intro{
   height: 100%;
@@ -125,13 +148,8 @@ body {
 
 .search-form {
   padding-top: 60px;
-  padding-bottom: 153px;
+  padding-bottom: 376px;
 }
-/* input{
-  /* border: 0; */
-  /* border-bottom: 3px solid rgba(191, 192, 197, 1);
-  background-color: transparent;
-  margin-right: 50px; */
 
 .search-form__info{
   display: flex;
@@ -191,20 +209,129 @@ body {
 .search-form__submit:hover, .search-form__submit:focus, .search-form__submit:active{
   background-color: #0a55b7;
 }
-  /* min-height: 50px;
-  width:153px; 
-  position: relative; */
-  /* margin-right: 50px; */
 
+/*styles for intro end */
 
-/* .intro__form-formfield::before{
-  display: inline-block;
-  content:'';
-  width: 20px;
-  height: 20px;
-  border: 2px solid white;
-  border-radius: 20px;
+/*styles for behefits start */
+.benefits{
+  margin-bottom: 131px;
+}
+.benefits__wrap{
+  max-width: 1262px;
+  box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+  margin: 0 auto;
+  
+  position: relative;
+}
+.benefits__title{
+  width: 100%;
+  padding-top: 93px;
+  padding-bottom: 88px;
+  padding-left: 100px;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: normal;
+  color: #102746;
+  margin: 0 auto;
   position: absolute;
-  top:0;
   left:0;
-} */
+  top: 0;
+  transform: translateY(-100%);
+  background-color: #FFF;
+
+}
+.benefits__cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 55px;
+  padding: 0 100px;
+  
+  
+}
+.benefit__card{
+  margin-bottom: 111px;
+
+}
+.benefit__card__icon{
+  margin-bottom: 37px;
+  max-width: 66px;
+}
+.benefit__card__title{
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+.benefit__card__text{
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 39px;
+  width: 317px;
+}
+.benefit__card__link{
+  display: inline-block;
+  color: #006DFE;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration:none;
+  position: relative;
+  padding-right: 60px;
+  background-image: url(../image/Shape.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  
+}
+.benefit__card__link:hover{
+  background-position: 100%;
+  transition: .2s all;
+}
+
+/*styles for behefits end */
+
+/*styles for places start */
+
+.places{
+  max-width: 1262px;
+  margin: 0 auto;
+}
+.places__caption{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.places__title{
+  margin-right: 15px;
+}
+.places__link-view-all{
+  color: #006DFE;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-right: 60px;
+  text-decoration: none;
+  background-image: url(../image/Shape.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+.places__link-view-all:hover{
+  opacity: 0.65;
+}
+
+
+
+
+
+
+
+
+
+
+
